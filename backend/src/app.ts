@@ -1,3 +1,4 @@
+import commentRoutes from "./routes/commentRoutes";
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -21,6 +22,7 @@ app.get("/health", (_req, res) => {
   res.json({ success: true, message: "Backend is running" });
 });
 
+app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);

@@ -1,163 +1,143 @@
-# 🚀 Project Management Tool (Trello/Asana Clone)
+🚀 Project Management Tool (Trello / Asana Clone)
 
-A full-stack collaborative project management application built as an internship task.
+A full-stack collaborative project management web application built as an internship task.
 
-This application allows users to:
+This application allows users to create projects, manage tasks, collaborate with team members, and communicate through task-based comments using a Kanban-style workflow.
 
-- Create projects
-- Create and manage tasks
-- Assign tasks
-- Add comments inside tasks
-- Track progress using Kanban-style columns
+🌍 Live Demo
 
----
+Frontend:
+https://project-management-tool-to-do-list.vercel.app
 
-## 🌟 Live Demo
+Backend API:
+https://pm-tool-backend-qmlz.onrender.com
 
-(Will be added after deployment)
+🛠 Tech Stack
+Frontend
 
-Frontend:  
-Backend:  
+Next.js 14 (App Router)
 
----
+TypeScript
 
-## 🛠 Tech Stack
+TailwindCSS
 
-### Frontend
-- Next.js 14 (App Router)
-- TypeScript
-- TailwindCSS
-- Axios
-- Socket.io Client
+Axios
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB Atlas
-- Mongoose
-- JWT Authentication
-- Socket.io
+Socket.io Client
 
----
+Backend
 
-## 🔐 Authentication
+Node.js
 
-- User Registration
-- User Login
-- Protected Routes
-- JWT stored in HTTP-only cookies
+Express.js
 
----
+MongoDB Atlas
 
-## 📁 Features
+Mongoose
 
-### ✅ Projects
-- Create new projects
-- Only owner can delete project
-- Members can access shared projects
+JWT Authentication
 
-### ✅ Tasks
-- Create tasks inside projects
-- Update status: `todo`, `in-progress`, `done`
-- Delete tasks
-- Kanban-style layout
+Socket.io
 
-### ✅ Comments
-- Add comments inside tasks
-- View all comments per task
-- Only project members can comment
+🔐 Authentication
 
----
+User Registration
 
-## 📂 Folder Structure
+User Login
 
-```
+Protected Routes
+
+JWT stored in HTTP-only cookies
+
+CORS-secured production deployment
+
+📁 Features
+✅ Projects
+
+Create new projects
+
+Only owner can delete project
+
+Members can access shared projects
+
+✅ Tasks
+
+Create tasks inside projects
+
+Update status: todo, in-progress, done
+
+Delete tasks
+
+Kanban-style column layout
+
+✅ Comments
+
+Add comments inside tasks
+
+View all comments per task
+
+Only project members can comment
+
+📂 Folder Structure
 pm-tool-stepwise/
   backend/
   frontend/
   README.md
-```
-
----
-
-## ⚙️ Local Setup Instructions
-
-### 1️⃣ Clone Repository
-
-```bash
+⚙️ Local Setup Instructions
+1️⃣ Clone Repository
 git clone https://github.com/OmShinde2415/Project-Management-Tool-To-Do-List-.git
 cd Project-Management-Tool-To-Do-List-
-```
-
----
-
-### 2️⃣ Backend Setup
-
-```bash
+2️⃣ Backend Setup
 cd backend
 npm install
 npm run dev
-```
 
 Backend runs on:
-```
+
 http://localhost:5001
-```
-
----
-
-### 3️⃣ Frontend Setup
-
-```bash
+3️⃣ Frontend Setup
 cd ../frontend
 npm install
 npm run dev
-```
 
 Frontend runs on:
-```
+
 http://localhost:3000
-```
-
----
-
-## 🌍 Environment Variables
-
-### Backend (.env)
-
-```
+🌍 Environment Variables
+Backend (.env)
 PORT=5001
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret
 CLIENT_URL=http://localhost:3000
 NODE_ENV=development
-```
-
-### Frontend (.env.local)
-
-```
+Frontend (.env.local)
 NEXT_PUBLIC_API_URL=http://localhost:5001
 NEXT_PUBLIC_SOCKET_URL=http://localhost:5001
-```
+🚀 Deployment
 
----
+Backend deployed on Render
 
-## 🚀 Future Improvements
+Frontend deployed on Vercel
 
-- Real-time task updates
-- Notifications system
-- Drag-and-drop task movement
-- Role-based permissions
-- UI improvements
-- Deployment optimization
+MongoDB hosted on MongoDB Atlas
 
----
+🔮 Future Improvements
 
-## 👨‍💻 Author
+Real-time task status sync across users
 
-**Om Shinde**
+Notification system
 
-Internship Full-Stack Project  
+Drag-and-drop task movement
+
+Role-based permissions
+
+UI/UX enhancements
+
+Activity logs
+
+👨‍💻 Author
+
+Om Shinde
+
+Full-Stack Internship Project
 Built using MERN + Next.js
-
----
